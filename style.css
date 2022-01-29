@@ -27,7 +27,10 @@
     padding: 10px;
     border-radius: 5px;
 }
-
+.nav ul li span{
+	color:white;
+	float:right;
+}
 .nav ul li a:hover{
 	background:white;
 	color:red;
@@ -56,7 +59,9 @@
 	border-bottom:1px solid white;
 	
 }
-
+.nav ul li:hover .dropdown-1 ul li span{
+	margin-right:-20px;
+}
 .dropdown-2{
 	display:none;
 }
@@ -101,6 +106,11 @@
 	.nav ul li a{
 		margin-right:10px;
 	}
+	.nav ul li span{
+		color:white;
+		float:right;
+		margin-right:10px
+	}
 	.dropdown-1{
 		display:flex;
 		display:none;
@@ -121,7 +131,10 @@
 		padding-right:initial;
 		margin-left:-20px;
 	}
-	
+	.nav ul li:hover .dropdown-1 ul li span{
+		margin-right:initial;
+		margin-right:10px;
+	}
 	.dropdown-2{
 		display:flex;
 		display:none;
@@ -141,7 +154,6 @@
 		padding-left:initial;
 		padding-right:initial;
 	} 
-	
 	
 }
 
