@@ -80,39 +80,66 @@
 
 
 @media screen and (max-width:600px){
-	
+	nav{
+		
+	}
 	.nav ul{
 		flex-direction:column;
 		background:#3E8DA8;
 		margin-top:50px;
-		min-width:150px;
-		height:100vh;
+		min-width:230px;
 		border-top:1px solid white;
+		height:100vh;
+		
 	}
 	
 	.nav ul li{
 		line-height:50px;
 		margin-left:-40px;
-		padding-left: 50px;
-		padding-right:50px;
 		border-bottom:1px solid white;
 	}
 	.nav ul li a{
 		margin-right:10px;
 	}
-	/* .dropdown-1{ */
-	 /* visibility:hidden */
-	/* } */
-	/* .nav ul li:hover .dropdown-1{ */
-		/* visibility:visible; */
-		/* margin-left:-51px; */
-	/* } */
-	/* .nav ul li:hover .dropdown-1 ul{ */
-		/* margin-top:-6px; */
-	/* } */
+	.dropdown-1{
+		display:flex;
+		display:none;
+	}
+	.nav ul li:hover .dropdown-1{
+		display:initial;
+		position:initial;
+		
+	}
+	.nav ul li:hover .dropdown-1 ul{
+		height:inherit;
+		position:relative;
+		min-width:initial;
+		margin-top:-1px;		
+	}
+	.nav ul li:hover .dropdown-1 ul li{
+		padding-left:initial;
+		padding-right:initial;
+		margin-left:-20px;
+	}
 	
-	.dropdown-1 ul{
-		margin-top:-15px
+	.dropdown-2{
+		display:flex;
+		display:none;
+		
+	}
+	.dropdown-1 ul li:hover .dropdown-2{
+		display:initial;
+		position:initial;
+		
+	}
+	.dropdown-1 ul li:hover .dropdown-2 ul{
+		
+		
+	} 
+	.dropdown-1 ul li:hover .dropdown-2 ul li{
+		margin-left:-20px;
+		padding-left:initial;
+		padding-right:initial;
 	} 
 	
 	
